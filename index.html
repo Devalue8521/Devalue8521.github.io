@@ -20,7 +20,12 @@
         <div class="displayUma"></div>        
     </section>
 
-    <audio id="audio" src="bakushin.mp3" autoplay repeat></audio>
+    <audio id="audio" src="bakushin.mp3" loop></audio>
     <script type="module" src="util.js"></script>
+    <script>
+  document.addEventListener('click', () => {
+    document.getElementById('audio').play();
+  }, { once: true });
+</script>
 </body>
 </html>
