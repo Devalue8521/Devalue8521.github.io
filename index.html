@@ -21,11 +21,8 @@
     </section>
 
     <audio id="audio" src="bakushin.mp3" loop></audio>
+    <button onclick="document.getElementById('audio').play()">▶ Écouter</button>
     <script type="module" src="util.js"></script>
-    <script>
-  document.addEventListener('click', () => {
-    document.getElementById('audio').play();
-  }, { once: true });
-</script>
+    
 </body>
 </html>
